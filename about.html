@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Add custom styles here */
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    
+    
+    /* Home Section */
+    #home {
+      width: 100%;
+      height: 600px;
+      background-image: url("https://images.wallpaperscraft.com/image/single/laptop_keyboard_glow_170138_300x168.jpg");
+     
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      
+      color:beige;
+      
+      position: relative;
+    }
+    #home h1 {
+      font-size: 36px;
+    }
+    #home p {
+      font-size: 18px;
+    }
+    #home .btn-primary {
+      margin-top: 20px;
+    }
+    
+    /* About Section */
+    #about {
+      padding: 50px 0;
+      background-color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    #about .card {
+      background-image: url("");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #131111;
+      padding: 20px;
+      flex-basis: 48%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    #about h2 {
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    #about p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    
+    /* Projects Section */
+    #projects {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+    }
+    #projects h2 {
+      color: #333;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+   
+    /* Contact Section */
+    #contact {
+      padding: 50px 0;
+      background-color: #fff;
+    }
+    #contact h2 {
+      color: #333;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .img-fluid{
+        border-radius: 200px;
+        height: 300px;
+    }
+    /* Additional Effects */
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+    <!-- Navbar -->
+    
+
+  <!-- Home Section -->
+  <section id="home" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <br><br>
+        <br>
+        <h1 >Welcome to My Website </h1>
+        <p>Hi, this is siri, a web developer.
+            passionate about creating engaging and user-friendly websites
+        </p>
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+      </div>
+      <div class="col-lg-6">
+       <!--  <img src="" alt="Profile Picture" class="img-fluid">  --> 
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container-fluid">
+    <div class="card mx-auto" style="max-width: 500px;">
+      <div class="card-body">
+        <h2 class="text-primary">About Me</h2>
+        <p>
+          Hi, Iam siri. I'm a student studying in AP IIIT NUZvid.
+          I'm passionate about creating engaging and user-friendly websites
+          that not only look great but also deliver a seamless browsing experience.
+          I enjoy taking challenges and staying up-to-date 
+          with the latest trends and best practices in web development.
+          It's great to meet you!
+         
+        </p>
+      </div>
+    </div>
+    <div class="card mx-auto" style="max-width: 500px;">
+      <div class="card-body">
+        <h2 class="text-primary">About Skills </h2>
+        <p>
+          Python<br>
+          web technologies<br>
+          Data structures<br>
+          C language<br>
+          Java<br>
+          DBMS<br>
+          c++ basics
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container-fluid">
+    <h2 class="btn-primary">Projects</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="C:\Users\AMMU\Pictures\Screenshots\Screenshot (219).png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1-WEBSITE WITH CAPTCHA</h5>
+            <p class="card-text">Here is a description of my NetSphere project, which includes complete Backend APIs, a Database, and Frontend functionality.
+
+                The website offers the following functionalities:
+                
+                1. dairy journal Posting API: Users can create and publish blog posts on various topics.
+                
+                2. Daily Updated Articles API: Users can access and read daily news articles on required subjects.
+            <a href="#">read more</a></p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="card">
+          <img src="C:\Users\AMMU\Pictures\Screenshots\Screenshot (214).png"  class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2-PORTFILIO WEB</h5>
+            <p class="card-text">This portfolio website is to showcase my work . 
+                It's like an evergreen platform for my projects, case studies, and information about me.
+          .
+        this portfilio contains about my studies,my skills</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="C:\Users\AMMU\Pictures\Screenshots\Screenshot (213).png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Here is the description of project3..........</p>
+            <a href="#" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>

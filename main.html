@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>website</title>
+       <link rel="stylesheet" href="styleee.css">
+    
+
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo">WELCOME</h1>
+            <nav class="navigation">
+                <a href="C:\Users\AMMU\Downloads\task2 (1)\task2\home.html">Home</a>
+                <a href="C:\Users\AMMU\Downloads\task2 (1)\task2\about.html">About</a>
+                <a href="C:\Users\AMMU\Downloads\task2 (1)\task2\contact.html">contact</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+
+        </header>
+        <div class="wrapper">
+           <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login form </h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required >
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+                        <input type="password" required>
+                        <label>password</label>
+                    </div>
+
+              <div class="container">
+     
+                <div class="input_field captch_box">
+                   <input type="text" value="" disabled />
+                   <button class="refresh_button"><img style="width:25px;height:25px;" src="refresh.png">
+                    <i class="fa-solid fa-rotate-right"></i>
+                   </button>
+                </div>
+               <div class="input_field captch_input">
+                  <input type="text" placeholder="Enter captcha" />
+               </div>
+               <div class="message">Entered captcha is correct</div>
+               <div class="input_field button disabled"></div>
+              </div>
+                    
+                    
+                    
+                <!--   <div class="remember-forgot">
+                        <label><input type="checkbox">remember-me</label>
+                        <a href="#">forgot password</a>
+                    </div>--> 
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+                        <input type="password" required>
+                        <label>password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">agree to the terms & conditions</label>
+                        
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        <script src="script.js">
+
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+</html>

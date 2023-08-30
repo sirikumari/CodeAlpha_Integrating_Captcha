@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sliding Images Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    .carousel-inner img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+    #image-carousel .carousel-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  top: 70px;
+  left: 55px;
+  right: 55px;
+}
+
+#image-carousel .carousel-content {
+  background: rgba(4, 4, 4, 0.7);
+  padding: 20px;
+  color: #fff;
+  border-top: 5px solid #1bbd36;
+}
+
+#image-carousel .carousel-content h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+
+
+.post-card {
+    padding: 30px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.post-card:hover {
+    transform: scale(1.1);
+  
+    border-color: #fff;
+    border-radius: 10px;
+  }
+   
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+ /* Contact Section */
+ #contact {
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  #contact h2 {
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  </style>
+</head>
+<body>
+  
+   <!--NAVIGATION BAR RELATED CODE-->
+
+
+
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+  <!--NAVIGATION BAR RELATED CODE ENDS-->
+
+  <!--C:\\Users\\K Jagadeesh\\Pictures\\blog-3.jpg-->
+
+  <section id="home" class="container-fluid">
+    <div id="image-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="C:\Users\AMMU\Downloads\task2 (1)\task2\p1.jpeg" alt="Image 1">
+          <div class="carousel-container">
+              <div class="carousel-content animate_animated animate_fadeInUp">
+                <h2>BLOG WEBSITE</h2>
+                <p>A blog (a truncation of "weblog") is an informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts).</p>
+                <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\AMMU\Downloads\task2 (1)\task2\p.png" alt="Image 2">
+          <div class="carousel-container">
+              <div class="carousel-content animate_animated animate_fadeInUp">
+                <h2>BLOG WEBSITE</h2>
+                <p>A blog (a truncation of "weblog") is an informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts)..</p>
+                <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              </div>
+            </div>
+  
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\AMMU\Downloads\task2 (1)\task2\p2.jpg" alt="Image 3">
+          <div class="carousel-container">
+              <div class="carousel-content animate_animated animate_fadeInUp">
+                <h2>BLOG WEBSITE</h2>
+                <p>A blog (a truncation of "weblog") is an informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts)..</p>
+                <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              </div>
+            </div>
+  
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\AMMU\Desktop\pics\wal.jpg" alt="Image 4">
+          <div class="carousel-container">
+              <div class="carousel-content animate_animated animate_fadeInUp">
+                <h2>BLOG WEBSITE</h2>
+                <p>A blog (a truncation of "weblog") is an informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts).</p>
+                <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              </div>
+            </div>
+  
+        </div>
+        
+      <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </section>
+  
+   <!-- Blog Writing Form -->
+   <section id="projects" class="container mt-4">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="post-card">
+          <h2>Write a New Blog</h2>
+          <form id="blogForm">
+            <div class="form-group">
+              <label for="blogTitle">Title</label>
+              <input type="text" class="form-control" id="blogTitle" required>
+            </div>
+            <div class="form-group">
+              <label for="blogContent">Content</label>
+              <textarea class="form-control" id="blogContent" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Post Blog</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Posts Section -->
+  <div class="container mt-4">
+    <div class="row" id="blogPosts">
+      <div class="col-lg-8">
+        <!-- Existing blog posts (no changes here) -->
+        <div class="post-card">
+          <h2>RGUKT NOTIFICATION</h2>
+          <p>Posted on July 22, 2023</p>
+          <p>
+            What is the criteria for AP IIIT notification 2023?
+To be eligible for the AP RGUKT IIIT Admission 2023, students must meet the following criteria: The candidate should have passed SSC (10th class) or any other equivalent examination recognized by the Government of Andhra Pradesh.
+          </p>
+          <a href="https://www.rgukt.in/">Read more</a>
+        </div>
+
+        <div class="post-card">
+            <h2>WORLD WAR3?</h2>
+            <p>Posted on July 20, 2023</p>
+            <p>When was the 3rd World War?
+                Understanding Third world war:
+                
+                The phrase “third world war” emerged during the Cold War. The Cold War was fought from 1945 to 1991. It was fought between the communist countries of the world, led by the Soviet Union, and the capitalist countries of the world, led by the United States..</p>
+            <a href="https://www.rguktn.in/">Read more</a>
+          </div>
+          <div class="post-card">
+              <h2>COMPUTER SCIENCE</h2>
+              <p>Posted on July 20, 2023</p>
+              <p>
+                What is the Full form of CSE? The full form of CSE is Computer Science Engineering. It is an engineering course that involves several computer science aspects essential for the creation of the computer system.
+              </p>
+              <a href="https://www.rgukt.in/">Read more</a>
+            </div>
+  
+            <div class="post-card">
+              <h2>WHAT IS AI?</h2>
+              <p>Posted on July 20, 2023</p>
+              <p>
+                What is your definition of AI?
+                What is Artificial Intelligence (AI) ? | IBM
+                Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind.
+              </p>
+              <a href="https://www.rguktn.in/">Read more</a>
+            </div>
+    
+      </div>
+      <div class="col-lg-4">
+        <!-- Sidebar content goes here -->
+        <div class="post-card">
+          <h3>About Me</h3>
+          <p>Hello, I'm Ramakrishna. Welcome to my blog! I am from cse background.  i am passionate about creating engaging and user-friendly websites</p>
+        </div>
+
+        <!-- Add more sidebar content here -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ... Your existing footer code ... -->
+
+  <!-- JavaScript code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript code for handling the form submission
+    $(document).ready(function() {
+      $("#blogForm").submit(function(event) {
+        event.preventDefault();
+
+        // Get the values from the form
+        const title = $("#blogTitle").val();
+        const content = $("#blogContent").val();
+
+        // Create a new blog post
+        const newBlogPost = `
+          <div class="post-card">
+            <h2>${title}</h2>
+            <p>Posted on ${new Date().toLocaleDateString()}</p>
+            <p>${content}</p>
+            <a href="#">Read more</a>
+          </div>
+        `;
+
+        // Append the new blog post to the existing blog posts
+        $("#blogPosts").append(newBlogPost);
+
+        // Clear the form inputs
+        $("#blogTitle").val("");
+        $("#blogContent").val("");
+      });
+    });
+  </script>
+   <!-- Contact Section -->
+   <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 My Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+</html>
